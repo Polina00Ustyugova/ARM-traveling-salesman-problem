@@ -159,6 +159,7 @@ void MainWindow::on_Answer_clicked()
     answer += '1';
     answer = answer + "   length = " + QString::number(ans);
     QMessageBox::information(this, "Решение", answer);
+    path.clear();
     }
 }
 void MainWindow::on_Visual_clicked()
