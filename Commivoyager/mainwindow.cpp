@@ -98,7 +98,7 @@ bool MainWindow::empty()
     {
         for(int j  = 0; j < n; j++)
         {
-            if(ui->LinksTable->item(i,j)->text() == "")
+            if(!(ui->LinksTable->item(i,j)->text()))
             {
                 QMessageBox::warning(this, "Ошибка", "Запишите информацию во все ячейки.");
                 return 0;
