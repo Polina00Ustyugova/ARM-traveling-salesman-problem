@@ -98,7 +98,7 @@ bool MainWindow::empty()
     {
         for(int j  = 0; j < n; j++)
         {
-            if(ui->LinksTable->item(i,j)->text() == "")
+            if(!(ui->LinksTable->item(i,j)))
             {
                 QMessageBox::warning(this, "Ошибка", "Запишите информацию во все ячейки.");
                 return 0;
@@ -129,41 +129,42 @@ void MainWindow::on_Answer_clicked()
 {
     if(empty() && chain() && table())
     {
-    QVector<QVector<float> > g(n, QVector<float>(n));
-    for (int i = 0; i < n; ++i)
-    {
-        for (int j = 0; j < n; ++j)
+        QVector<QVector<float> > g(n, QVector<float>(n));
+        for (int i = 0; i < n; ++i)
         {
-            g[i][j] = ui->LinksTable->item(i,j)->text().toFloat();
+            for (int j = 0; j < n; ++j)
+            {
+                g[i][j] = ui->LinksTable->item(i,j)->text().toFloat();
+            }
         }
-    }
-    for (int i = 0; i < n; i++)
-    {
-        for (int mask = 0; mask < (1 << n); mask++)
+        for (int i = 0; i < n; i++)
         {
-            d[mask][i] = inf;
+            for (int mask = 0; mask < (1 << n); mask++)
+            {
+                d[mask][i] = inf;
+            }
         }
-    }
-    d[0][0] = 0;
-    ans = findcheapest(0, (1 << n) - 1, g, n);
-    findway(g, n);
+        d[0][0] = 0;
+        ans = findcheapest(0, (1 << n) - 1, g, n);
+        findway(g, n);
 
-    for (int i = 0; i < n; i++){
-        path[i]+=1;
-    }
-    QString answer;
-    for (int i = 0; i < n; i++)
-    {
-        answer = answer + QString::number(path[i]) + " -> ";
-    }
-    answer += '1';
-    answer = answer + "   length = " + QString::number(ans);
-    QMessageBox::information(this, "Решение", answer);
+        for (int i = 0; i < n; i++){
+            path[i]+=1;
+        }
+        QString answer;
+        for (int i = 0; i < n; i++)
+        {
+            answer = answer + QString::number(path[i]) + " -> ";
+        }
+        answer += '1';
+        answer = answer + "   length = " + QString::number(ans);
+        QMessageBox::information(this, "Решение", answer);
+        path.clear();
     }
 }
 void MainWindow::on_Visual_clicked()
 {
-   if (n > 10 || n <= 0)
+   if (n > 10 || n <= 1)
    {
        if (n > 10) QMessageBox::warning(this, "Ошибка", "Максимальный размер графа равен 10!");
        else QMessageBox::warning(this, "Ошибка", "Размер графа не может быть равен 0!");
