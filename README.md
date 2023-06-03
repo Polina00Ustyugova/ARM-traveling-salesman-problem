@@ -42,12 +42,13 @@
 <img src="./img/ARM_UML.jpg">
 
 ## Скриншоты работы программы
-Рис. 1 - Окно входа в систему.
 <img src="./img/arm_enter.jpg">
 
-Рис. 2 - Ошибка доступа
+Рис. 1 - Окно входа в систему.
 
 <img src="./img/arm_authorized.jpg">
+
+Рис. 2 - Ошибка доступа
 
 Рис. 3 - Регистрация нового пользователя
 <img src="./img/arm_registration_first.jpg">
