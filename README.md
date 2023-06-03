@@ -149,28 +149,36 @@
 
 ## Скриншоты работы программы
 
-<img src="./img/ZK_main.jpg">
 Рис. 1 - Окно задачи коммивояжёра.
 
-<img src="./img/ZK_error.jpg">
+<img src="./img/ZK_main.jpg">
+
 Рис. 2 - Ошибка несозданной таблицы смежности.
 
-<img src="./img/ZK_error2.jpg">
+<img src="./img/ZK_error.jpg">
+
 Рис. 3 - Ошибка незаполненной таблицы смежности.
 
-<img src="./img/ZK_error3.jpg">
+<img src="./img/ZK_error2.jpg">
+
 Рис. 4 - Ошибка неправильно заполненной таблицы смежности. 
 
-<img src="./img/ZK_graph.jpg">
+<img src="./img/ZK_error3.jpg">
+
 Рис. 5 - Граф по таблице смежности.
 
-<img src="./img/ZK_newtable.jpg">
+<img src="./img/ZK_graph.jpg">
+
 Рис. 6 - Добавление новой вершины.
 
-<img src="./img/ZK_newgraph.jpg">
+<img src="./img/ZK_newtable.jpg">
+
 Рис. 7 - Новый граф по таблице смежности.
 
+<img src="./img/ZK_newgraph.jpg">
+
 Рис. 8 - Решение задачи коммивояжёра.
+
 <img src="./img/ZK_answer.jpg">
 
 
