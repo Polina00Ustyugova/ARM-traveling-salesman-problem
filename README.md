@@ -51,41 +51,53 @@
 
 <img src="./img/arm_authorized.jpg">
 
-<img src="./img/arm_registration_first.jpg">
 Рис. 3 - Регистрация нового пользователя
 
-<img src="./img/arm_registration.jpg">
+<img src="./img/arm_registration_first.jpg">
+
 Рис. 4 - Сообщение о регистрации.
 
-<img src="./img/arm_enter_second.jpg">
+<img src="./img/arm_registration.jpg">
+
 Рис. 5 - Вход незарегистрированного пользователя
 
-<img src="./img/arm_error.jpg">
+<img src="./img/arm_enter_second.jpg">
+
 Рис. 6 - Ошибка незарегистрированного пользователя
 
-<img src="./img/arm_sql.jpg">
+<img src="./img/arm_error.jpg">
+
 Рис. 7 - Список зарегистрированных пользователей в базе данных.
 
-<img src="./img/arm_real_enter.jpg">
-Рис. 8 - Вход зарегистрированного пользователя. 
+<img src="./img/arm_sql.jpg">
 
-<img src="./img/arm_success.jpg">
+Рис. 8 - Вход зарегистрированного пользователя.
+
+<img src="./img/arm_real_enter.jpg">
+
 Рис. 9 - Сообщение об успешном входе 
 
-<img src="./img/arm_cases.jpg">
+<img src="./img/arm_success.jpg">
+
 Рис. 10 - Окно с делами.
 
-<img src="./img/arm_sql_2.jpg">
+<img src="./img/arm_cases.jpg">
+
 Рис. 11 - База данных с делами.
 
-<img src="./img/arm_criminals.jpg">
+<img src="./img/arm_sql_2.jpg">
+
 Рис. 12 - Таблица с подозреваемыми.
 
-<img src="./img/arm_victims.jpg">
+<img src="./img/arm_criminals.jpg">
+
 Рис. 13 - Таблица с пострадавшими. 
 
-<img src="./img/arm_case_table.jpg">
+<img src="./img/arm_victims.jpg">
+
 Рис. 14 - Таблица с делами
+
+<img src="./img/arm_case_table.jpg">
 
 ---
 # Задача коммивояжёра 
