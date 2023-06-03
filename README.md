@@ -43,11 +43,13 @@
 
 ## Скриншоты работы программы
 
-<img src="./img/arm_enter.jpg">
 Рис. 1 - Окно входа в систему.
 
-<img src="./img/arm_authorized.jpg">
+<img src="./img/arm_enter.jpg">
+
 Рис. 2 - Ошибка доступа
+
+<img src="./img/arm_authorized.jpg">
 
 <img src="./img/arm_registration_first.jpg">
 Рис. 3 - Регистрация нового пользователя
